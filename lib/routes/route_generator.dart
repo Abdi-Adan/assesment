@@ -4,7 +4,7 @@ import 'package:spraxa_tech_assesment/splash/splash_screen.dart';
 
 class AppRouterGenerator {
   static Route<dynamic>? generateRoute(RouteSettings? settings) {
-    final dynamic args = settings?.arguments;
+    // final dynamic args = settings?.arguments;
 
     switch (settings?.name) {
       case splashScreenTwoRoute:
