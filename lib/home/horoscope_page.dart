@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spraxa_tech_assesment/widgets/birth_date_tile.dart';
 import 'package:spraxa_tech_assesment/widgets/birth_time_widget.dart';
 import 'package:spraxa_tech_assesment/widgets/gender_tile.dart';
+import 'package:spraxa_tech_assesment/widgets/language_dropdown.dart';
 import 'package:spraxa_tech_assesment/widgets/name_tile.dart';
 
 class Horoscope extends StatelessWidget {
@@ -28,24 +29,10 @@ class Horoscope extends StatelessWidget {
         // Divider(thickness: 2),
         // LongLatWidget(),
         // Divider(thickness: 2),
-        // LanguageDropDown(),
-        // Divider(thickness: 2),
+        LanguageDropDown(),
+        Divider(thickness: 2),
       ],
     );
-  }
-}
-
-class LanguageDropDown extends StatefulWidget {
-  const LanguageDropDown({super.key});
-
-  @override
-  State<LanguageDropDown> createState() => _LanguageDropDownState();
-}
-
-class _LanguageDropDownState extends State<LanguageDropDown> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
 
