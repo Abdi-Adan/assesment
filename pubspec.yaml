@@ -19,6 +19,7 @@ dependencies:
   firebase_core: ^2.3.0
   flutter_native_splash: ^2.2.15
   font_awesome_flutter: ^10.2.1
+  rxdart: ^0.27.7
 
 dev_dependencies:
   flutter_test:
