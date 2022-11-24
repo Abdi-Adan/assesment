@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:spraxa_tech_assesment/home/horoscope_page.dart';
 import 'package:spraxa_tech_assesment/home/match_making.dart';
+import 'package:spraxa_tech_assesment/utils/global_utils.dart';
 
 class Homepage extends StatefulWidget {
-  const Homepage({super.key});
+  final SigninMethod signinMethod;
+
+  const Homepage({super.key, required this.signinMethod});
 
   @override
   State<Homepage> createState() => _HomepageState();

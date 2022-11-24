@@ -3,7 +3,6 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:spraxa_tech_assesment/routes/route_generator.dart';
 import 'package:spraxa_tech_assesment/routes/routes.dart';
 import 'package:spraxa_tech_assesment/splash/splash_screen.dart';
@@ -12,8 +11,6 @@ final GlobalKey<NavigatorState> globalAppNavigatorKey =
     GlobalKey<NavigatorState>();
 
 void main() async {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -41,7 +38,7 @@ class MyApp extends StatelessWidget {
       ],
       initialRoute: splashScreenTwoRoute,
       onGenerateRoute: AppRouterGenerator.generateRoute,
-      title: 'Spraxa technical assesment',
+      title: 'Kundli Test: Abdi Adan',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),

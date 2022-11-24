@@ -1,0 +1,1 @@
+enum SigninMethod { google, anonymous }
