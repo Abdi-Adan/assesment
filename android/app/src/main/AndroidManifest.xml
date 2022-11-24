@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.spraxa_tech_assesment">
    <application
-        android:label="spraxa_tech_assesment"
+        android:label="Kundli Test"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
