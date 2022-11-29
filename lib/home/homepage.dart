@@ -53,9 +53,9 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
           )),
       body: TabBarView(
         controller: _tabController,
-        children: const [
-          Horoscope(),
-          MatchMaking(),
+        children: [
+          Horoscope(signinMethod: widget.signinMethod),
+          MatchMaking(signinMethod: widget.signinMethod),
         ],
       ),
     );

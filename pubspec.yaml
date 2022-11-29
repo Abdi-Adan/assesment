@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
 
   async_redux: ^18.0.2
+  country_picker: ^2.0.17
+  csc_picker: ^0.2.6
   cupertino_icons: ^1.0.2
   firebase_analytics: ^10.0.6
   firebase_auth: ^4.1.3

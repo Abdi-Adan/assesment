@@ -10,10 +10,7 @@ class LanguageDropDown extends StatefulWidget {
 }
 
 class _LanguageDropDownState extends State<LanguageDropDown> {
-  // Initial Selected Value
   String dropdownvalue = 'English';
-
-  // List of items in our dropdown menu
   var items = [
     'English',
     'Hindu',
@@ -23,9 +20,25 @@ class _LanguageDropDownState extends State<LanguageDropDown> {
   Widget build(BuildContext context) {
     return ListTileCustom(
       title: 'Language',
-      subWidget: DropdownButton(items: items, onChanged: (Object? value) {  },),
-      trailingWidget: TrailingIconWidget(trailingIcon: Icon(Icons.language)),
+      subWidget: DropdownButton(
+        alignment: AlignmentDirectional.centerEnd,
+        underline: const SizedBox(),
+        value: dropdownvalue,
+        icon: const Icon(Icons.keyboard_arrow_down),
+        items: items.map((e) {
+          return DropdownMenuItem(
+            value: e,
+            child: Text(e),
+          );
+        }).toList(),
+        onChanged: (String? value) {
+          setState(() {
+            dropdownvalue = value!;
+          });
+        },
+      ),
+      trailingWidget:
+          const TrailingIconWidget(trailingIcon: Icon(Icons.g_translate)),
     );
   }
 }
-
